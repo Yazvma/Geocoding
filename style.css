@@ -1,0 +1,46 @@
+body{
+    background-color : #212121; 
+}
+
+::placeholder{
+    color : #424242;
+}
+
+
+#Eingabe{
+    width : 500px;
+    text-align : center;
+    color : #BB86FC;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    outline : none;
+    border-radius : 9999em;
+    border : none;
+    background-color : #303030;
+    font-size : 2em;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    box-shadow : 3px -3px 10px #3700B3;
+}
+
+#Senden{
+    position:absolute;
+    top:18%;
+    left:45%;
+    border-radius : 9999em;
+    border : none;
+    text-align : center;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size : 2em;
+    box-shadow : 3px -3px 10px #3700B3;
+    background-color : #303030;
+     color : #424242;
+}
+
+#outputtable{
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;   
+    color:white;
+    position:absolute;
+    top : 10%;
+    left: 80%;
+}
