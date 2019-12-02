@@ -1,3 +1,13 @@
+var map = L.map('map').setView([52.151207, 7.333872], 14);
+mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+L.tileLayer(
+    'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; ' + ' Contributors',
+        maxZoom: 18,
+    }).addTo(map);
+			
+			
+	
 function getCoordinates()
 {
     'use strict';
@@ -18,9 +28,10 @@ function getCoordinates()
     let lng = geoObject.results[0].geometry.location.lng;
     let adresse =geoObject.results[0].formatted_address;
     Output2(adresse,lat,lng);
+    var marker = L.marker(lat,lng).addTo(map);
+                               
     });
-                                 
-
+    
 }
 
 
@@ -39,3 +50,9 @@ function Output2(adresse,lat,lng)
     var newText  = document.createTextNode(adresse);
     newCell.appendChild(newText);
 }
+
+/*function DrawPoint(adresse,lat,lng){
+    alert(adresse);
+    var marker = L.marker(lng,lat).addTo(map);
+         
+}*/
