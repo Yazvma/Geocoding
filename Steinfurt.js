@@ -28,8 +28,8 @@ function getCoordinates()
     let lng = geoObject.results[0].geometry.location.lng;
     let adresse =geoObject.results[0].formatted_address;
     Output2(adresse,lat,lng);
-    var marker = L.marker(lat,lng).addTo(map);
-                               
+    var marker = L.marker([lat,lng]).addTo(map);
+                              
     });
     
 }
