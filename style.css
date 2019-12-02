@@ -6,6 +6,8 @@ body{
     color : #424242;
 }
 
+#map { height: 500px;
+       width : 500px;}
 
 #Eingabe{
     width : 500px;
@@ -44,3 +46,4 @@ body{
     top : 10%;
     left: 80%;
 }
+
